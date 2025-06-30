@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Visual Guide: Your First Website with Gemini & VS Code</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Header -->
+      <header>
+        <h1>Welcome to AI-Powered Web Development!</h1>
+        <p>
+          A Visual Guide to Installing Gemini in VS Code and Building Your First
+          Website
+        </p>
+      </header>
+
+      <!-- Tutorial Sections -->
+      <div class="space-y">
+        <!-- Part 1: Setup -->
+        <section>
+          <h2>Part 1: Setting Up Your Developer Toolkit</h2>
+          <div class="grid">
+            <div class="step-card">
+              <h3>Step 1: Install VS Code</h3>
+              <p class="mb-4">
+                VS Code is your code editor. It's where you'll write the code
+                for your websites.
+              </p>
+              <ol>
+                <li>
+                  Open your browser and go to
+                  <a href="https://code.visualstudio.com/" target="_blank"
+                    >code.visualstudio.com</a
+                  >.
+                </li>
+                <li>Click the big blue "Download" button.</li>
+                <li>Run the installer you downloaded.</li>
+                <li>
+                  Follow the setup instructions, keeping the default settings.
+                </li>
+              </ol>
+            </div>
+            <img
+              src="images/vscode.png"
+              alt="Visual Studio Code download page"
+            />
+          </div>
+        </section>
+
+        <!-- Part 2: Gemini Extension -->
+        <section>
+          <h2>Part 2: Bringing Gemini into VS Code</h2>
+          <div class="space-y">
+            <div class="grid">
+              <div class="step-card">
+                <h3>Step 2: Find the Gemini Extension</h3>
+                <p class="mb-4">
+                  Now let's add the Gemini AI assistant to VS Code.
+                </p>
+                <ol>
+                  <li>
+                    Click the <strong>Extensions</strong> icon on the left-side
+                    Activity Bar.
+                  </li>
+                  <li>In the search bar, type <code>Gemini</code>.</li>
+                  <li>
+                    Look for the one published by <strong>Google</strong>.
+                  </li>
+                  <li>
+                    Alternatively, go to
+                    <a href="https://codeassist.google/" target="_blank"
+                      >Gemini Code Assist</a
+                    >
+                    and install.
+                  </li>
+                  <li>Click the blue <strong>Install</strong> button.</li>
+                  <li>
+                    After installation, click the new Gemini icon in the
+                    Activity Bar.
+                  </li>
+                  <li>Click the button to sign in with your Google account.</li>
+                  <li>Follow the browser prompts to authorize access.</li>
+                </ol>
+              </div>
+              <img
+                src="images/geminiextension.png"
+                alt="Searching for Gemini in VS Code Extensions"
+              />
+            </div>
+            <div class="grid">
+              <img
+                src="images/geminiinstallsignin.png"
+                alt="Signing in to Gemini"
+              />
+              <div class="step-card">
+                <h3>Step 3: Install & Sign In</h3>
+                <ol>
+                  <li>Create an empty folder on your desktop.</li>
+                  <li>Drag and drop it into the middle section of VS Code.</li>
+                  <li>Authorize the editor to access the folder.</li>
+                </ol>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Part 3: Generate Website -->
+        <section>
+          <h2>Part 3: Generating Your First Website</h2>
+          <div class="grid">
+            <div class="step-card">
+              <h3>Step 4: Create Your Files</h3>
+              <p class="mb-4">Every website needs files. Let's make ours.</p>
+              <ol>
+                <li>
+                  Go to <code>File &gt; Open Folder</code> and create a new
+                  folder for your project.
+                </li>
+                <li>
+                  In the Explorer panel, right-click and select "New File".
+                </li>
+                <li>Create <code>index.html</code>.</li>
+                <li>Create <code>style.css</code>.</li>
+              </ol>
+            </div>
+            <img
+              src="images/vscodeaddfiles.png"
+              alt="File explorer showing index.html and style.css"
+              class="wide-item"
+            />
+          </div>
+          <div class="mt-3">
+            <div class="step-card">
+              <h3>Step 5: Talk to Gemini</h3>
+              <p class="mb-6">
+                Open the Gemini chat (<kbd>Ctrl+Shift+I</kbd>) and use these
+                prompts, one for each file.
+              </p>
+              <div class="grid">
+                <img
+                  src="images/vscodeaddfiles.png"
+                  alt="File explorer showing index.html and style.css"
+                /><img
+                  src="images/geminiaddtp.png"
+                  alt="Gemini chat prompt example"
+                />
+              </div>
+              <hr />
+              <div class="grid mt-3">
+                <div>
+                  <h4>For <code>index.html</code>:</h4>
+                  <div class="code-block">
+                    Generate the HTML for a simple personal portfolio website.
+                    It should have a header with my name, a section about me, a
+                    section for my projects with three placeholder projects, and
+                    a footer with my contact information. Make sure to link to a
+                    stylesheet named "style.css".
+                  </div>
+                </div>
+                <div>
+                  <h4>For <code>style.css</code>:</h4>
+                  <div class="code-block">
+                    Generate the CSS for the personal portfolio website. Give it
+                    a clean and modern look. Use a dark theme with a readable
+                    font. Style the header, the "about me" section, the project
+                    cards, and the footer.
+                  </div>
+                </div>
+              </div>
+              <p class="mt-3">
+                Gemini will generate the code. Click
+                <strong>Insert at Cursor</strong> to add it to the correct open
+                file.
+              </p>
+            </div>
+            <hr />
+            <img
+              src="images/geminiprompt.png"
+              alt="File explorer showing index.html and style.css"
+            />
+          </div>
+          <div class="grid mt-3">
+            <div class="step-card">
+              <h3>Step 6: See Your Website!</h3>
+              <p class="mb-4">Time to see your creation.</p>
+              <ol>
+                <li>
+                  Install the <strong>Live Server</strong> extension from the
+                  marketplace.
+                </li>
+                <li>Make sure you save the files.</li>
+                <li>Right-click your <code>index.html</code> file.</li>
+                <li>Select <strong>Open with Live Server</strong>.</li>
+                <li>Your browser will open with your new website!</li>
+              </ol>
+            </div>
+            <img
+              src="images/vscodegolive.png"
+              alt="Open with live server option"
+            />
+          </div>
+          <div class="mt-3">
+            <h3>Step 7: Customize and Admire!</h3>
+            <p class="mb-6">
+              Your website is live! Now, go back to <code>index.html</code> and
+              replace the placeholder text with your own info.
+            </p>
+            <div class="step-card">
+              <img src="images/website.png" alt="Final portfolio website" />
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <!-- Footer -->
+      <footer>
+        <p>
+          Congratulations! You've built your first AI-generated website. Keep
+          experimenting!
+        </p>
+      </footer>
+    </div>
+  </body>
+</html>
